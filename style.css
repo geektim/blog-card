@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    height: 100svh;
+    position: relative;
+    background-color: hsl(47, 88%, 63%);
+    font-family: "Figtree", sans-serif;
+    font-size: 1rem;
+    color: hsl(0, 0%, 7%);
+}
+
+main.card {
+    width: 93%;
+    height: auto;
+    max-width: 370px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: hsl(0, 0%, 100%);
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 7px 7px 0 0 black;
+    transition: all .1s linear;
+}
+
+main.card:hover {
+    box-shadow: 12px 12px 0 0 black;
+}
+
+section {
+    width: 100%;
+}
+
+section.image {
+    margin-bottom: 1rem;
+}
+
+section.image > img {
+    max-width: 100%;
+    border-radius: .75rem;
+}
+
+section.texts {
+    margin-bottom: 2rem;
+}
+
+section.texts > h1 {
+    font-size: 1rem;
+    font-weight: 800;
+    display: inline-block;
+    background-color: hsl(47, 88%, 63%);
+    padding: .4rem .7rem;
+    border-radius: .3rem;
+    margin-bottom: 1rem;
+}
+
+section.texts > h2 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+section.texts > h3 {
+    font-size: 1.25rem;
+    font-weight: 800;
+    margin-bottom: 1.2rem;
+}
+
+section.texts > h3:hover {
+    color: hsl(47, 88%, 63%);
+    cursor: pointer;
+}
+
+section.texts > p {
+    color: hsl(0, 0%, 50%);
+    font-weight: 500;
+}
+
+section.foot {
+    display: flex;
+    align-items: center;
+}
+
+section.foot > img {
+    width: 2.5rem;
+    margin-right: 1rem;
+}
+
+section.foot > p {
+    font-weight: 800;
+}
